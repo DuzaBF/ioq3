@@ -12,7 +12,7 @@ ifeq ($(COMPILE_PLATFORM),sunos)
 endif
 
 ifndef BUILD_STANDALONE
-  BUILD_STANDALONE =
+  BUILD_STANDALONE = 1
 endif
 ifndef BUILD_CLIENT
   BUILD_CLIENT     =
@@ -108,15 +108,15 @@ VERSION=1.36
 endif
 
 ifndef CLIENTBIN
-CLIENTBIN=ioquake3
+CLIENTBIN=modtbs
 endif
 
 ifndef SERVERBIN
-SERVERBIN=ioq3ded
+SERVERBIN=modtbsded
 endif
 
 ifndef BASEGAME
-BASEGAME=baseq3
+BASEGAME=basemodtbs
 endif
 
 ifndef BASEGAME_CFLAGS
